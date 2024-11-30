@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template: 1fr 5fr / 1fr 4fr;
 }
 
 .sidebar {
@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
-  background-color: #3b8f3b;
+  background-color: #065f33;
 }
 
 .sidebar ul {
@@ -21,20 +21,40 @@
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   display: grid;
-  grid-template: auto / 2fr 1fr;
+  grid-template: auto / 3fr 2fr;
+  padding: 25px;
+}
+
+input {
+  width: 100%;
+  border-radius: 10px;
+}
+
+img.avatar  {
+  aspect-ratio: 1;
+  width: 100%;
 }
 
 .userinfo {
   display: grid;
-  grid-template-rows: auto;
+  grid-template-columns: 3fr 1fr 3fr;
 }
 
-.userinfo img {
-  grid-row: 1 / 3;
+.banner {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 4fr;
+}
+
+.banner img {
+  grid-row: 1 /3;
 }
 
 p.greeting {
   font-size: 0.7rem;
+}
+
+p.user {
+  font-weight: bold;
 }
 
 .main {
@@ -65,9 +85,11 @@ p.greeting {
 
 .deck .card {
   background-color: #FFFFFF;
+  height: 200px;
   text-align: center;
   box-shadow: 5px 5px 5px #29312d;
   border-radius: 5px;
+  border-left: solid thick #065f33;
 }
 
 .shelf {
@@ -75,4 +97,15 @@ p.greeting {
   border-radius: 5px;
   box-shadow: 5px 5px 5px #29312d;
   padding: 20px;
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.trending-project {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.trending-project img {
+  grid-row: 1 / 3;
 }
