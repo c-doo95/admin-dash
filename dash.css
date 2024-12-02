@@ -7,9 +7,13 @@ button {
   font-weight: bold;
 }
 
+p.title {
+  font-weight: bold;
+}
+
 .container {
   display: grid;
-  grid-template: 1fr 5fr / 1fr 4fr;
+  grid-template: auto / 1fr 4fr;
 }
 
 .sidebar {
@@ -32,7 +36,7 @@ button {
   grid-row: 1 / 2;
   display: grid;
   grid-template: 1fr 2fr / 3fr 2fr;
-  padding: 25px;
+  padding: 0px 25px;
   column-gap: 25px;
   align-items: center;
 }
@@ -57,17 +61,13 @@ img.avatar  {
 
 .banner {
   display: grid;
-  grid-template: 1fr 1fr / 1fr 4fr;
-  column-gap: 5px;
+  grid-template: 1fr 1fr / 1fr 5fr;
+  column-gap: 3%;
 }
 
 .banner img {
   grid-row: 1 /3;
   align-self: center;
-}
-
-.banner p.user {
-  align-self: self-start;
 }
 
 p.greeting {
@@ -111,7 +111,7 @@ p.user {
 .deck {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
+  gap: 5%;
 }
 
 .deck .card {
@@ -131,6 +131,10 @@ p.user {
   display: grid;
   grid-template-rows: auto;
 }
+
+ p.shelf-content {
+  font-size: 0.7rem;
+ }
 
 .trending-project {
   display: grid;
