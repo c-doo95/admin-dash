@@ -227,6 +227,15 @@ p.user {
   border-left: solid thick #065f33;
 }
 
+.card {
+  padding: 5%;
+  padding-left: 8%;
+}
+
+.card>p {
+  text-align: left;
+}
+
 .shelf {
   background-color: #FFFFFF;
   border-radius: 5px;
@@ -236,8 +245,20 @@ p.user {
   grid-template-rows: auto;
 }
 
+.shelf p.title {
+  margin-top: 5%;
+  margin-bottom: 1%
+}
+
+.middle {
+  border-top: solid 1px #535353;
+  border-bottom: solid 1px #535353;
+}
+
  p.shelf-content {
   font-size: 0.7rem;
+  color: #535353;
+  margin-top: 1%;
  }
 
 .trending-project {
@@ -256,7 +277,7 @@ p.username {
 }
 
 #proj-title {
-  color: #46574f;
+  color: #535353;
 }
 
 .trending-project>p {
