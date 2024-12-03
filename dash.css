@@ -53,6 +53,12 @@ p.title {
   align-self: center;
 }
 
+.nav-box {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 25%;
+}
+
 .nav {
   display: grid;
   grid-template-rows: auto;
