@@ -25,9 +25,13 @@ p.title {
   grid-row: 1 / 3;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 50px;
   background-color: #065f33;
   color: #FFFFFF;
+}
+
+.sidebar p {
+  font-weight: 600;
 }
 
 .logo {
@@ -49,10 +53,46 @@ p.title {
   align-self: center;
 }
 
-.sidebar ul {
+.nav {
   display: grid;
-  list-style-type: none;
-  gap: 10px;
+  grid-template-rows: auto;
+  margin-left: 10%;
+  align-content: center;
+  gap: 5%;
+}
+
+.nav>div {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 5%;
+}
+
+.nav>div>p {
+  margin: 5%;
+}
+
+.settings {
+  display: grid;
+  grid-template-rows: auto;
+  margin-left: 10%;
+  align-content: center;
+  gap: 5%;
+}
+
+.settings>div {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 5%;
+}
+
+.settings>div>p {
+  margin: 5%;
+}
+
+img.icon {
+  align-self: center;
+  width: 80%;
+  filter: invert(100%);
 }
 
 .header {
