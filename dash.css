@@ -95,7 +95,7 @@ p.title {
   margin: 5%;
 }
 
-img.icon {
+.sidebar .icon {
   align-self: center;
   width: 80%;
   filter: invert(100%);
@@ -234,6 +234,18 @@ p.user {
 
 .card>p {
   text-align: left;
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 10%;
+}
+
+.icon-box>.icon {
+  width: 9%;
+  justify-content: center;
 }
 
 .shelf {
